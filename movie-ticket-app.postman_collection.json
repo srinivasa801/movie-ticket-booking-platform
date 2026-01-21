@@ -1,0 +1,117 @@
+{
+  "info": {
+    "_postman_id": "dacec84a-5ca4-4f97-abe2-9516fa25559e",
+    "name": "movie-ticket-app",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51606914",
+    "_collection_link": "https://go.postman.co/collection/51606914-dacec84a-5ca4-4f97-abe2-9516fa25559e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "shows",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "bookingseats",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8084/api/bookings?showId=1&seats=5&customerName=Rahul",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "bookings"
+          ],
+          "query": [
+            {
+              "key": "showId",
+              "value": "1"
+            },
+            {
+              "key": "seats",
+              "value": "5"
+            },
+            {
+              "key": "customerName",
+              "value": "Rahul"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8084/api/bookings?showId=1&seats=5&customerName=Rahul",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8084",
+          "path": [
+            "api",
+            "bookings"
+          ],
+          "query": [
+            {
+              "key": "showId",
+              "value": "1"
+            },
+            {
+              "key": "seats",
+              "value": "5"
+            },
+            {
+              "key": "customerName",
+              "value": "Rahul"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "bookingseats  negative",
+      "request": {
+        "method": "POST",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
